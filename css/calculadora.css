@@ -53,9 +53,7 @@ h1, h2, h3, h4, h5 { margin:0;}
 
 /* GENERALES */
 #simulador{margin-top: 14vh;} 
-#simular .column.rayado:before { background: #dbdbdb; width: 1px; height: 80%;
-  position: relative; content: " "; float: right;
-  top: 90px; right: -12px;}
+#simular .column.rayado:before { background: #dbdbdb; width: 1px; height: 80%; position: relative; content: " "; float: right; top: 90px; right: -12px;}
 .header {height: 60px; padding-bottom: 12px;vertical-align: bottom; display: table-cell;}
 .va-bottom{align-items: end; display: flex;}
 
@@ -85,16 +83,8 @@ input:focus {border: 2px solid #fff;outline: none; margin-top: 8px; margin-right
 #loader {position: absolute; text-align: center; width: 100%; height: 100%; background:#ff6665; color: #FFF}
 #loader-titulo {margin-top: 30vh;}
 #loading {}
-/*#loading { position: absolute; left: 50%; top:50vh; z-index: 1; width: 120px; height: 120px; margin: -76px 0 0 -76px;
-  border: 16px solid #f3f3f3; border-radius: 50%; border-top: 16px solid #ff6665; -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;}*/
-
 @-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); }}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); }}
 
 .animate-bottom {position: relative; -webkit-animation-name: animatebottom; -webkit-animation-duration: 1s; animation-name: animatebottom; animation-duration: 1s}
 
@@ -125,7 +115,6 @@ input:focus {border: 2px solid #fff;outline: none; margin-top: 8px; margin-right
   #simulador .mobcentrame {margin: 0 auto;}
   
   hr {display: none;}
-  /*.column {display: unset;}*/
   .columns.is-mobile { display: flex;}
   .is-1-mobile { width: 8.33333% !important}
   .is-2-mobile { width: 16.66667% !important}
