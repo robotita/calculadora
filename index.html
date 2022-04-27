@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora Mundial de Fútbol Qatar 2022</title>
+    <link rel="stylesheet" href="https://especialess3.lanacion.com.ar/fonts/fontsWithPrumo.css">
+    <link rel="stylesheet" href="css/calculadora.css">
+  </head>
+  <body>
+
+
+  <!--preloader-->
+  <div id="loader">
+    <h3 class="is-s-thin" id="loader-titulo"> Calculadora Mundial <br> de Fútbol Qatar 2022 </span></h3>
+    <h3 class="is-ss-heavy">GRUPO C</h3>
+    <div id="loading"> 
+        <svg width="120" version="1.1" id="L5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+          <circle fill="#fff" stroke="none" cx="26" cy="50" r="6">
+          <animateTransform attributeName="transform" dur="1s" type="translate" values="0 15 ; 0 -15; 0 15" repeatCount="indefinite" begin="0.1"></animateTransform> </circle>
+          <circle fill="#fff" stroke="none" cx="50" cy="50" r="6">
+          <animateTransform attributeName="transform" dur="1s" type="translate" values="0 10 ; 0 -10; 0 10" repeatCount="indefinite" begin="0.2"></animateTransform> </circle>
+          <circle fill="#fff" stroke="none" cx="74" cy="50" r="6">
+          <animateTransform attributeName="transform" dur="1s" type="translate" values="0 5 ; 0 -5; 0 5" repeatCount="indefinite" begin="0.3"></animateTransform> </circle>
+        </svg>
+      </div>
+  </div>
+  <!--//preloader-->
+
+
+  <!--///EL SIMULADOR\\\-->
+
+  <section id="simulador" style="display:none;" class="animate-bottom">
+    <div class="container">
+
+    	<div class="columns mobcentrame">
+
+        <!--===== RESULTADO POSICIONES =====-->
+    		<div class="column is-4" id="resultado">
+    			<h2 class="is-s-thin is-size-1 header"> GRUPO </h1>
+    			<hr>
+    			<div class="columns is-mobile">
+    					<div class="column is-6-mobile"> <h2 class="is-size-0 is-s-bold is-rosa-claro"> C </h2> </div>
+    					<div class="column has-text-right is-gris-medium va-bottom"> 
+                <p class="is-size-7-mobile">SIMULÁ LOS RESULTADOS QUE FALTAN Y MIRÁ CÓMO QUEDARÍA LA TABLA <br>
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAaklEQVRIie3Puw2AMBAE0REpMRb99wENkJFQDiSQICP8WTvakS69dwfOOecqWoFTPMsbGSLwqP0jfecE7Oi+PYA59UIVnoWq8CK0Fq9CS3EJmotL0VS8CfqHN0W/8C7oUwC2e0Iv1DkX7QJoloFuj+gDsgAAAABJRU5ErkJggg=="/>
+                </p>
+             </div>
+    			</div>			
+
+
+    			<!--POSICIONES-->
+          <div id="tabla" class="is-rosa"> 
+            <div class="columns is-size-7 is-mobile">
+              <div class="column is-2 is-3-mobile has-text-left"> POSICIONES </div>
+              <div class="column is-ss-heavy" title="PUNTOS TOTALES"> PTS </div>
+              <div class="column" title="PARTIDOS JUGADOS"> PJ </div>
+              <div class="column is-ss-heavy" title="PARTIDOS GANADOS"> G </div>
+              <div class="column is-ss-heavy" title="PARTIDOS EMPATADOS"> E </div>
+              <div class="column is-ss-heavy" title="PARTIDOS PERDIDOS"> P </div>
+              <div class="column" title="PARTIDOS GOLES A FAVOR"> GF </div>
+              <div class="column" title="PARTIDOS GOLES EN CONTRA"> GC </div>
+              <div class="column" title="PARTIDOS DIFERENCIA DE GOL (GF - GC)"> DG </div>
+            </div>
+
+      			<div id="posicion0" class="columns is-mobile"> </div>
+      			<div id="posicion1" class="columns is-mobile"> </div>
+      			<div id="posicion2" class="columns is-mobile"> </div>
+      			<div id="posicion3" class="columns is-mobile"> </div>
+          </div> <!--//tabla-->
+
+    		</div>
+        <!--//RESULTADO POSICIONES-->
+
+
+
+
+
+
+
+        <!-- =====SIMULAR===== -->
+    		<div class="column is-8 is-ss-bold" id="simular">
+
+    			<div id="fecha" class="columns">
+    				<div class="column is-4 rayado"> 
+	    				<div id="partido0"> </div> 
+	    				<div id="partido1"> </div>
+    				</div>
+
+    				<div class="column is-4 rayado">
+	    				<div id="partido2"> </div>
+	    				<div id="partido3"> </div>
+    				</div>
+
+    				<div class="column is-4 rayado">
+	    				<div id="partido4"> </div>
+	    				<div id="partido5"> </div>
+    				</div>
+    			</div>
+
+    		 </div>
+         <!--//SIMULAR-->
+
+    </div>
+
+  </section>
+
+
+
+  <!-- JS CALCULATOR--> 
+  <script type="text/javascript" src="js/calculadora.js"></script>
+
+  <!--PRELOADER-->
+  <script type="text/javascript">
+
+    window.addEventListener('load',function(){
+
+        setTimeout(()=>{
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("simulador").style.display = "block";
+        }, 1800)
+
+
+    });
+  </script>
+
+
+  </body>
+
+</html>
